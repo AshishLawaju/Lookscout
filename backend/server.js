@@ -9,13 +9,15 @@ import mainRouter from "./routes/index.js";
 const app = express();
 
 
-app.use(
+/* app.use(
   cors({
     // origin: "*",
     origin:"https://lookscout-frontend-chi.vercel.app/",
     credentials: true,
   })
-);
+); */
+
+app.use(cors());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.json({ limit: "16kb" }));
 
