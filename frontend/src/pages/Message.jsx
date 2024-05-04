@@ -16,7 +16,7 @@ const Message = () => {
   console.log(message);
   return (
     <div className="container py-8 sm:py-16 lg:py-32">
-      <table className="w-full table-auto border-collapse border text-center">
+      <table className="w-full table-auto border-collapse border text-center overflow-scroll">
         <thead className="border ">
           <td className="border">Name</td>
           <td className="border">email</td>
