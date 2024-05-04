@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+
+    font-family: 'Roboto';
+}
+
+/* input.input-error,
+select.input-error {
+    border-color: red;
+} */
+
+@layer components{
+    .container{
+        @apply mx-auto w-full px-3 sm:max-w-[600px] md:max-w-[740px] lg:max-w-[990px] xl:max-w-[1216px] 
+    }
+
+    .btn {
+        @apply px-5 py-2
+    }
+
+    
+}

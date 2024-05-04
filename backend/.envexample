@@ -1,0 +1,7 @@
+MONGO_URI=mongodb+srv://ashishlawaju:ashish@scoutdb.dzaangs.mongodb.net/?retryWrites=true&w=majority&appName=scoutDB
+PORT=4000
+TOKEN_KEY = 68e4dfe892ca1653a0eec49c4f7180566ac068def7799d99140fdfe12947da97
+
+ADMIN_EMAIL = a@a.com
+ADMIN_PASSWORD = pass
+
