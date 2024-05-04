@@ -1,19 +1,5 @@
 {
-    "routes": [
-      {
-        "src": "/redirect",
-        "status": 308,
-        "headers": { "Access-Control-Allow-Origin":"*" }
-      },
-      {
-        "src": "/custom-page",
-        "headers": { "cache-control": "s-maxage=1000" },
-        "dest": "/index.html"
-      },
-      { "src": "/api", "dest": "/my-api.js" },
-      { "src": "/users", "methods": ["POST"], "dest": "/users-api.js" },
-      { "src": "/users/(?<id>[^/]*)", "dest": "/users-api.js?id=$id" },
-      { "src": "/legacy", "status": 404 },
-      { "src": "/.*", "dest": "https://my-old-site.com" }
-    ]
-  }
+    "version":2,
+    "builds":[{"src" :"./server.js" , "use":"@vercel/node"}],
+    "routes":[{"src":"/(.*)" ,"dest":"/"}]
+}
