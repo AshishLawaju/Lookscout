@@ -76,6 +76,8 @@ const Login = () => {
         >
           {"Login"}
         </button>
+
+        <p className="underline" onClick={()=>navigate('/adminlogin')}>login as admin</p>
       </form>
     </section>
   );
