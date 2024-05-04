@@ -3,7 +3,7 @@
       {
         "src": "/redirect",
         "status": 308,
-        "headers": { "Location": "https://example.com/" }
+        "headers": { "Access-Control-Allow-Origin":"*" }
       },
       {
         "src": "/custom-page",
