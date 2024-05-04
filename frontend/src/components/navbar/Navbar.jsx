@@ -67,6 +67,15 @@ const Navbar = () => {
             <NavLink to={"/contact"}  onClick={()=>setShowMenu(false)}  className="cursor-pointer">
               Contacts
             </NavLink>
+            {user.role ? (
+              user.role.role == "admin" ? (
+                <NavLink to={"/message"}>Message</NavLink>
+              ) : (
+                ""
+              )
+            ) : (
+              <></>
+            )}
 
             {user.value ? (
               <div className="flex gap-4 font-semibold lg:hidden">
