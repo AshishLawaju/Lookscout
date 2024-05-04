@@ -13,26 +13,26 @@ const Message = () => {
       .then((res) => setMessage(res.data.data))
       .catch((err) => console.log(err));
   }, [token]);
-  console.log(message);
+  // console.log(message);
   return (
     <div className="container py-8 sm:py-16 lg:py-32">
       <table className="w-full table-auto border-collapse border text-center overflow-scroll">
         <thead className="border ">
-          <td className="border">Name</td>
-          <td className="border">email</td>
-          <td className="border">phone</td>
-          <td className="border">Get In Touch</td>
+          <td className="border ">Name</td>
+          <td className="border  max-sm:hidden ">email</td>
+          <td className="border max-sm:hidden ">phone</td>
+          <td className="border  max-sm:hidden">Get In Touch</td>
           <td className="border">message</td>
         </thead>
 
         <tbody>
           {message.map((el) => (
             <tr key={el.name} className="border ">
-              <td className="p-1 border text-center">{el.name}</td>
-              <td className="p-1 border text-center">{el.email}</td>
-              <td className="p-1 border text-center">{el.phone}</td>
-              <td className="p-1 border text-center">{el.getInTouch}</td>
-              <td className="p-1 border text-center">{el.message}</td>
+              <td className="p-1 border text-center max-sm:hidden">{el.name}</td>
+              <td className="p-1 border text-center ">{el.email}</td>
+              <td className="p-1 border text-center max-sm:hidden">{el.phone}</td>
+              <td className="p-1 border text-center max-sm:hidden">{el.getInTouch}</td>
+              <td className="p-1 border text-center ">{el.message}</td>
             </tr>
           ))}
         </tbody>
