@@ -16,7 +16,7 @@ const Contact = () => {
       `${backendURL}/api/sendmessage`,
 
       {
-        name: values.email,
+        name: values.name,
         email: values.email,
         phone: values.phone,
         getInTouch: values.getInTouch,

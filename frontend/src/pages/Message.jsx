@@ -28,7 +28,7 @@ const Message = () => {
         <tbody>
           {message.map((el) => (
             <tr key={el.name} className="border ">
-              <td className="p-1 border text-center ">{el.name}</td>
+              <td className="p-1 border text-center   ">{el.name}</td>
               <td className="p-1 border text-center max-sm:hidden">{el.email}</td>
               <td className="p-1 border text-center max-sm:hidden">{el.phone}</td>
               <td className="p-1 border text-center max-sm:hidden">{el.getInTouch}</td>

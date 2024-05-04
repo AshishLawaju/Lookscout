@@ -69,7 +69,7 @@ const Navbar = () => {
             </NavLink>
             {user.role ? (
               user.role.role == "admin" ? (
-                <NavLink to={"/message"}>Message</NavLink>
+                <NavLink to={"/message"} onClick={()=>setShowMenu(false)}>Message</NavLink>
               ) : (
                 ""
               )
