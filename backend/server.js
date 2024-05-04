@@ -11,7 +11,8 @@ const app = express();
 
 app.use(
   cors({
-    origin: "*",
+    // origin: "*",
+    origin:"https://lookscout-frontend-chi.vercel.app/",
     credentials: true,
   })
 );
